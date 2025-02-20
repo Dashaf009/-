@@ -547,5 +547,8 @@ h6,
   .audio-overlay-button:active {
     transform: scale(1);
   }
+  * {
+    font-family: 'Itim', sans-serif !important;
+}
 
  
