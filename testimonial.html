@@ -102,64 +102,77 @@
     </div>
     <!-- Page Header End -->
 
-    <!-- Geothermal Energy Content Start -->
-    <section class="py-5" style="background-color: #d7edda;">
-      <div class="container-fluid py-5">
-        <div class="container">
-          <div class="row g-5">
-            
-            <!-- 3D Model Section -->
-            <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="text-center mb-4">
-                <h2>โมเดล 3D จำลองพลังงานความร้อนใต้พิภพ</h2>
-              </div>
-              <div class="ratio ratio-16x9" style="border-radius: 10px; overflow: hidden;">
-                <iframe src="https://3d.energyencyclopedia.com/geothermal?mode=iframe" title="Geothermal Energy Model" style="border: none;" allowfullscreen></iframe>
-              </div>
-            </div>
+<!-- Geothermal Energy Content Start -->
+<section class="py-5" style="background-color: #d7edda;">
+  <div class="container-fluid py-5">
+    <div class="container">
+      
+      <!-- Section 1: 3D Model -->
+      <div class="row g-5 mb-5">
+        <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="text-center mb-4">
+            <h2>โมเดล 3D จำลองพลังงานความร้อนใต้พิภพ</h2>
+          </div>
+          <div class="ratio ratio-16x9" style="border-radius: 10px; overflow: hidden;">
+            <iframe src="https://3d.energyencyclopedia.com/geothermal?mode=iframe" 
+                    title="Geothermal Energy Model" 
+                    style="border: none;" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Section 2: ระบบผลิตพลังงานความร้อนใต้พิภพ -->
+      <div class="row g-5 mb-5">
+        <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="text-center mb-4">
+            <h2>ภาพระบบผลิตพลังงานความร้อนใต้พิภพและเสียงประกอบ</h2>
+          </div>
+          <div class=" position-relative" style="border-radius: 10px; overflow: hidden;">
+            <img class="img-fluid" src="assets/images/geothermal_system.png" 
+                 alt="ระบบผลิตพลังงานความร้อนใต้พิภพ" 
+                 style="width: 100%; height: 100%; object-fit: cover;">
+            <div id="geothermalHotspotsContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Section 3: วิดีโอเรียนรู้เพิ่มเติม -->
+      <div class="row g-5">
+        <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="text-center mb-4">
+            <h2>วิดิโอเรียนรู้เพิ่มเติม</h2>
+          </div>
+          <div class="ratio ratio-16x9" style="border-radius: 10px; overflow: hidden;">
+            <video controls style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="assets/videos/พลังงานความร้อนใต้พิภพ.mp4" type="video/mp4">
+              เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+            </video>
+          </div>
+        </div>
+      </div>
+      
+    </div><!-- /.container -->
+  </div><!-- /.container-fluid -->
+</section>
+<!-- Geothermal Energy Content End -->
 
-            <!-- ระบบผลิตพลังงานความร้อนใต้พิภพ พร้อมปุ่ม overlay สำหรับเล่นเสียง -->
-            <div class="col-12 wow fadeInUp" data-wow-delay="0.2s" style="position: relative;">
-              <h2>ระบบผลิตพลังงานความร้อนใต้พิภพ</h2>
-              <div class="image-container" style="position: relative;">
-                <img src="assets/images/geothermal_system.png" alt="ระบบผลิตพลังงานความร้อนใต้พิภพ" class="section-image" style="width:100%; display:block;">
-                <!-- Container hotspot สำหรับพลังงานความร้อนใต้พิภพ -->
-                <div id="geothermalHotspotsContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
-              </div>
-            </div>
-
-            <!-- วิดีโอเรียนรู้เพิ่มเติม -->
-            <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="text-center mb-4">
-                <h2>เรียนรู้เพิ่มเติมเกี่ยวกับพลังงานความร้อนใต้พิภพ</h2>
-              </div>
-              <div class="centered-video" style="text-align: center;">
-                <video controls style="width: 100%; max-width: 800px;">
-                  <source src="assets/videos/พลังงานความร้อนใต้พิภพ.mp4" type="video/mp4">
-                  เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
-                </video>
-              </div>
-            </div>
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- Geothermal Energy Content End -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-4">มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น</h4>
-            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>150 ถ. ศรีจันทร์ ในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+            <h4 class="text-white mb-4">มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น </h4>
+            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> 150 ถ. ศรีจันทร์ ในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
             <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
             <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
             <div class="d-flex pt-2">
-              <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-              <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-              <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+  
+              <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                  class="fab fa-facebook-f"></i></a>
+  
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
@@ -229,13 +242,13 @@
 
       // อาเรย์ hotspot สำหรับระบบผลิตพลังงานความร้อนใต้พิภพ
       var geothermalHotspots = [
-        { label: 'กำลังการผลิต(Power Output)', audio: audioFilesGeothermal.powerOutput, top: '7%', left: '30%' },
-        { label: 'เครื่องควบแน่น (Condenser)', audio: audioFilesGeothermal.condenser, top: '10%', left: '83%' },
-        { label: 'เครื่องแลกเปลี่ยนความร้อน(Heat Exchanger)', audio: audioFilesGeothermal.heatExchanger, top: '20%', left: '55%' },
-        { label: 'ห้องกังหัน(Turbine Hall)', audio: audioFilesGeothermal.turbineHall, top: '6%', left: '62%' },
+        { label: 'กำลังการผลิต(Power Output)', audio: audioFilesGeothermal.powerOutput, top: '7%', left: '32%' },
+        { label: 'เครื่องควบแน่น (Condenser)', audio: audioFilesGeothermal.condenser, top: '12%', left: '83%' },
+        { label: 'เครื่องแลกเปลี่ยนความร้อน(Heat Exchanger)', audio: audioFilesGeothermal.heatExchanger, top: '18%', left: '55%' },
+        { label: 'ห้องกังหัน(Turbine Hall)', audio: audioFilesGeothermal.turbineHall, top: '6%', left: '60%' },
         { label: 'บ่อน้ำฉีด(Injection Well)', audio: audioFilesGeothermal.injectionWell, top: '85%', left: '50%' },
-        { label: 'บ่อน้ำผลิต(Production Well)', audio: audioFilesGeothermal.productionWell, top: '78%', left: '34%' },
-        { label: 'แหล่งสะสมพลังงาน (HDR Reservoir)', audio: audioFilesGeothermal.hdrReservoir, top: '70%', left: '50%' }
+        { label: 'บ่อน้ำผลิต(Production Well)', audio: audioFilesGeothermal.productionWell, top: '78%', left: '36%' },
+        { label: 'แหล่งสะสมพลังงาน (HDR Reservoir)', audio: audioFilesGeothermal.hdrReservoir, top: '72%', left: '50%' }
       ];
 
       // ฟังก์ชันสร้างปุ่ม hotspot ใน container ที่ระบุ

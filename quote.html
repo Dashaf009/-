@@ -104,50 +104,60 @@
 
 <!-- Wind Energy Content Start -->
 <section class="py-5" style="background-color: #d7edda;">
-    <div class="container-fluid py-5">
-      <div class="container">
-        <div class="row g-5">
-          <!-- 3D Model Section -->
-          <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="text-center mb-4">
-              <h2>โมเดล 3D จำลองพลังงานลม</h2>
-            </div>
-            <div class="ratio ratio-16x9" style="border-radius: 10px; overflow: hidden;">
-              <iframe src="https://3d.energyencyclopedia.com/wind-energy?mode=iframe" 
-                      title="Wind Energy Model" 
-                      style="border: none;" 
-                      allowfullscreen>
-              </iframe>
-            </div>
+  <div class="container-fluid py-5">
+    <div class="container">
+      
+      <!-- Section 1: 3D Model -->
+      <div class="row g-5 mb-5">
+        <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="text-center mb-4">
+            <h2>โมเดล 3D จำลองพลังงานลม</h2>
           </div>
-  
-          <!-- ระบบผลิตพลังงานลม พร้อมปุ่ม overlay สำหรับเล่นเสียง -->
-          <div class="col-12 wow fadeInUp" data-wow-delay="0.2s" style="position: relative;">
-            <h2>ระบบผลิตพลังงานลม</h2>
-            <div class="image-container" style="position: relative;">
-              <img src="assets/images/wind_turbine_system.png" alt="ระบบผลิตพลังงานลม" class="section-image" style="width: 100%; display: block;">
-              <!-- Container hotspot สำหรับพลังงานลม -->
-              <div id="windHotspotsContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
-            </div>
+          <div class="ratio ratio-16x9" style="border-radius: 10px; overflow: hidden;">
+            <iframe src="https://3d.energyencyclopedia.com/wind-energy?mode=iframe" 
+                    title="Wind Energy Model" 
+                    style="border: none;" 
+                    allowfullscreen>
+            </iframe>
           </div>
-  
-          <!-- วิดีโอเรียนรู้เพิ่มเติม -->
-          <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="text-center mb-4">
-              <h2>เรียนรู้เพิ่มเติมเกี่ยวกับพลังงานลม</h2>
-            </div>
-            <div class="centered-video" style="text-align: center;">
-              <video controls style="width: 100%; max-width: 800px;">
-                <source src="assets/videos/พลังงานลม.mp4" type="video/mp4">
-                เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
-              </video>
-            </div>
+        </div>
+      </div>
+      
+      <!-- Section 2: ระบบผลิตพลังงานลม -->
+      <div class="row g-5 mb-5">
+        <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="text-center mb-4">
+            <h2>ภาพระบบผลิตพลังงานลมพร้อมเสียงประกอบ</h2>
           </div>
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </div><!-- /.container-fluid -->
-  </section>
-  <!-- Wind Energy Content End -->
+          <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
+            <img class="img-fluid" src="assets/images/wind_turbine_system.png" 
+                 alt="ระบบผลิตพลังงานลม" 
+                 style="width: 100%; height: 100%; object-fit: cover;">
+            <div id="windHotspotsContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Section 3: วิดีโอเรียนรู้เพิ่มเติม -->
+      <div class="row g-5">
+        <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="text-center mb-4">
+            <h2>วิดิโอเรียนรู้เพิ่มเติม</h2>
+          </div>
+          <div class="ratio ratio-16x9" style="border-radius: 10px; overflow: hidden;">
+            <video controls style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="assets/videos/พลังงานลม.mp4" type="video/mp4">
+              เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+            </video>
+          </div>
+        </div>
+      </div>
+      
+    </div><!-- /.container -->
+  </div><!-- /.container-fluid -->
+</section>
+<!-- Wind Energy Content End -->
+
   
 
     <!-- Footer Start -->
@@ -155,24 +165,24 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-4">มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น</h4>
-            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>150 ถ. ศรีจันทร์ ในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+            <h4 class="text-white mb-4">มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น </h4>
+            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> 150 ถ. ศรีจันทร์ ในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
             <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
             <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
             <div class="d-flex pt-2">
-              <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-              <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-              <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+  
+              <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                  class="fab fa-facebook-f"></i></a>
+  
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <h4 class="text-white mb-4">เข้าถึงอย่างรวดเร็ว</h4>
-            <a class="btn btn-link" href="">หน้าหลัก</a>
-            <a class="btn btn-link" href="">พลังงานลม</a>
-            <a class="btn btn-link" href="">พลังงานแสงอาทิตย์</a>
-            <a class="btn btn-link" href="">พลังงานความร้อนใต้พิภพ</a>
-            <a class="btn btn-link" href="">พลังงานชีวมวล</a>
+            <a class="btn btn-link" href="index.html">หน้าหลัก</a>
+            <a class="btn btn-link" href="feature.html">พลังงานน้ำ</a>
+            <a class="btn btn-link" href="team.html">พลังงานแสงอาทิตย์</a>
+            <a class="btn btn-link" href="testimonial.html">พลังงานความร้อนใต้พิภพ</a>
+            <a class="btn btn-link" href="404.html">พลังงานชีวมวล</a>
           </div>
         </div>
       </div>
@@ -240,26 +250,26 @@
       // อาเรย์ hotspot สำหรับระบบผลิตพลังงานลม
       var windHotspots = [
         { label: "กระปุกเกียร์ (Gearbox)", audio: audioFilesWind.gearbox, top: "37%", left: "91%" },
-        { label: "ระบบหมุนแกนแนวตั้ง (Yaw Drive)", audio: audioFilesWind.yawDrive, top: "65%", left: "1%" },
-        { label: "เครื่องกำเนิดไฟฟ้า (Electric Generator)", audio: audioFilesWind.electricGenerator, top: "53%", left: "91%" }
+        { label: "ระบบหมุนแกนแนวตั้ง (Yaw Drive)", audio: audioFilesWind.yawDrive, top: "65%", left: "10%" },
+        { label: "เครื่องกำเนิดไฟฟ้า (Electric Generator)", audio: audioFilesWind.electricGenerator, top: "53%", left: "87%" }
       ];
 
       // อาเรย์ hotspot สำหรับฟาร์มกังหันลม
       var windHotspots2 = [
-        { label: "เครื่องวัดความเร็วลม (Anemometer)", audio: audioFilesWind.anemometer, top: "23%", left: "92%" },
-        { label: "เบรกโรเตอร์ (Rotor Brake)", audio: audioFilesWind.rotorBrake, top: "70%", left: "92%" },
-        { label: "แบริ่งเพลาหลัก (Main Shaft Bearing)1", audio: audioFilesWind.mainShaftBearing1, top: "35%", left: "1%" },
-        { label: "แบริ่งเพลาหลัก (Main Shaft Bearing)2", audio: audioFilesWind.mainShaftBearing2, top: "35%", left: "20%" }
+        { label: "เครื่องวัดความเร็วลม (Anemometer)", audio: audioFilesWind.anemometer, top: "19.5%", left: "90%" },
+        { label: "เบรกโรเตอร์ (Rotor Brake)", audio: audioFilesWind.rotorBrake, top: "68%", left: "92%" },
+        { label: "แบริ่งเพลาหลัก (Main Shaft Bearing)1", audio: audioFilesWind.mainShaftBearing1, top: "35%", left: "12%" },
+        { label: "แบริ่งเพลาหลัก (Main Shaft Bearing)2", audio: audioFilesWind.mainShaftBearing2, top: "42%", left: "12%" }
       ];
 
       // อาเรย์ hotspot สำหรับโรงผลิตพลังงานลม
       var windHotspots3 = [
-        { label: "ใบพัด (Blades)", audio: audioFilesWind.blades, top: "80%", left: "1%" },
-        { label: "การปรับมุมใบพัด (Blade Pitch)", audio: audioFilesWind.bladePitch, top: "50%", left: "1%" },
+        { label: "ใบพัด (Blades)", audio: audioFilesWind.blades, top: "80%", left: "6%" },
+        { label: "การปรับมุมใบพัด (Blade Pitch)", audio: audioFilesWind.bladePitch, top: "50%", left: "9%" },
         { label: "โรเตอร์ (Rotor)", audio: audioFilesWind.rotor, top: "58%", left: "25%" },
-        { label: "ทิศทางลม (Wind Vane)", audio: audioFilesWind.windVane, top: "5%", left: "92%" },
-        { label: "หอคอย (Tower)", audio: audioFilesWind.tower, top: "83%", left: "92%" },
-        { label: "แคนเซลล์ (Nacelle)", audio: audioFilesWind.nacelle, top: "15%", left: "1%" }
+        { label: "ทิศทางลม (Wind Vane)", audio: audioFilesWind.windVane, top: "7%", left: "91%" },
+        { label: "หอคอย (Tower)", audio: audioFilesWind.tower, top: "83%", left: "93%" },
+        { label: "แคนเซลล์ (Nacelle)", audio: audioFilesWind.nacelle, top: "15%", left: "8%" }
       ];
 
       // รวมอาเรย์ hotspot ทั้งหมดเข้าด้วยกัน (เพื่อนำมาแสดงในภาพเดียว)

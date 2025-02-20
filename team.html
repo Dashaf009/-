@@ -68,7 +68,7 @@
         <a href="index.html" class="nav-item nav-link active">หน้าหลัก</a>
         <a href="about.html" class="nav-item nav-link">คู่มือการใช้งาน</a>
         <div class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">หลังงานหมนุเวียน</a>
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">พลังงานหมุนเวียน</a>
           <div class="dropdown-menu bg-light m-0">
             <a href="feature.html" class="dropdown-item">พลังงานน้ำ</a>
             <a href="quote.html" class="dropdown-item">พลังงานลม</a>
@@ -97,116 +97,134 @@
   </div>
   <!-- Page Header End -->
 
-  <!-- Solar Energy Content Start -->
-  <section class="py-5" style="background-color: #d7edda;">
-    <div class="container-fluid py-5">
-      <div class="container">
-        <!-- 3D Model Section -->
-        <div class="row g-5 mb-5">
-          <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="text-center mb-4">
-              <h2>โมเดล 3D จำลองพลังงานแสงอาทิตย์</h2>
-            </div>
-            <div class="ratio ratio-16x9" style="border-radius: 10px; overflow: hidden;">
-              <iframe src="https://3d.energyencyclopedia.com/solar?mode=iframe" title="Solar Energy Model" style="border: none;" allowfullscreen></iframe>
-            </div>
+<!-- Solar Energy Content Start -->
+<section class="py-5" style="background-color: #d7edda;">
+  <div class="container-fluid py-5">
+    <div class="container">
+      
+      <!-- Section 1: 3D Model -->
+      <div class="row g-5 mb-5">
+        <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="text-center mb-4">
+            <h2>โมเดล 3D จำลองพลังงานแสงอาทิตย์</h2>
+          </div>
+          <div class="ratio ratio-16x9" style="border-radius: 10px; overflow: hidden;">
+            <iframe src="https://3d.energyencyclopedia.com/solar?mode=iframe" 
+                    title="Solar Energy Model" 
+                    style="border: none;" 
+                    allowfullscreen>
+            </iframe>
           </div>
         </div>
-        
-        <!-- Carousel Section: ภาพ -->
-        <div class="row g-5">
-          <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="owl-carousel testimonial-carousel">
-              <!-- Slide 1: โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง -->
-              <div class="testimonial-item">
-                <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
-                  <img class="img-fluid" src="assets/images/Solar tower.png" alt="โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง" style="width: 100%; height: 100%; object-fit: cover;">
-                  <div class="solarTowerHotspotsContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1001;"></div>
-                </div>
-              </div>
-              
-              <!-- Slide 2: โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค -->
-              <div class="testimonial-item">
-                <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
-                  <img class="img-fluid" src="assets/images/Photovoltaic power plant.png" alt="โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค" style="width: 100%; height: 100%; object-fit: cover;">
-                  <div class="photovoltaicHotspotsContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1001;"></div>
-                </div>
-              </div>
-              
-              <!-- Slide 3: ฟาร์มพลังงานแสงอาทิตย์ -->
-              <div class="testimonial-item">
-                <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
-                  <img class="img-fluid" src="assets/images/Solar farm.png" alt="ฟาร์มพลังงานแสงอาทิตย์" style="width: 100%; height: 100%; object-fit: cover;">
-                  <div class="farmHotspotsContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1001;"></div>
-                </div>
-              </div>
-            </div><!-- /.owl-carousel -->
+      </div>
+      
+      <!-- Section 2: Image Carousel -->
+      <div class="row g-5 mb-5">
+        <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="text-center mb-4">
+            <h2>ภาพระบบผลิตพลังงานแสงอาทิตย์พร้อมเสียงประกอบ</h2>
           </div>
-        </div><!-- /.row -->
-        
-        <!-- Carousel Section: วิดีโอ -->
-        <div class="row g-5">
-          <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="owl-carousel testimonial-carousel">
-              <!-- Slide 4: วิดีโอเรียนรู้เพิ่มเติม (1) -->
-              <div class="testimonial-item">
-                <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
-                  <video controls style="width: 100%; height: 100%; object-fit: cover;">
-                    <source src="assets/videos/พลังงานแสงอาทิตย์1.mp4" type="video/mp4">
-                    เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
-                  </video>
-                </div>
+          <div class="owl-carousel testimonial-carousel">
+            <!-- Slide 1: โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง -->
+            <div class="testimonial-item">
+              <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
+                <img class="img-fluid" src="assets/images/Solar tower.png" 
+                     alt="โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="solarTowerHotspotsContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1001;"></div>
               </div>
-              <!-- Slide 5: วิดีโอเรียนรู้เพิ่มเติม (2) -->
-              <div class="testimonial-item">
-                <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
-                  <video controls style="width: 100%; height: 100%; object-fit: cover;">
-                    <source src="assets/videos/พลังงานแสงอาทิตย์2.mp4" type="video/mp4">
-                    เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
-                  </video>
-                </div>
+            </div>
+            
+            <!-- Slide 2: โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค -->
+            <div class="testimonial-item">
+              <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
+                <img class="img-fluid" src="assets/images/Photovoltaic power plant.png" 
+                     alt="โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="photovoltaicHotspotsContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1001;"></div>
               </div>
-              <!-- Slide 6: วิดีโอเรียนรู้เพิ่มเติม (3) -->
-              <div class="testimonial-item">
-                <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
-                  <video controls style="width: 100%; height: 100%; object-fit: cover;">
-                    <source src="assets/videos/พลังงานแสงอาทิตย์3.mp4" type="video/mp4">
-                    เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
-                  </video>
-                </div>
+            </div>
+            
+            <!-- Slide 3: ฟาร์มพลังงานแสงอาทิตย์ -->
+            <div class="testimonial-item">
+              <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
+                <img class="img-fluid" src="assets/images/Solar farm.png" 
+                     alt="ฟาร์มพลังงานแสงอาทิตย์" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="farmHotspotsContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1001;"></div>
               </div>
-            </div><!-- /.owl-carousel -->
+            </div>
+          </div><!-- /.owl-carousel -->
+        </div>
+      </div>
+      
+      <!-- Section 3: Video Carousel -->
+      <div class="row g-5">
+        <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="text-center mb-4">
+            <h2>วิดิโอเรียนรู้เพิ่มเติม</h2>
           </div>
-        </div><!-- /.row -->
-        
-      </div><!-- /.container -->
-    </div><!-- /.container-fluid -->
-  </section>
-  <!-- Solar Energy Content End -->
+          <div class="owl-carousel testimonial-carousel">
+            <!-- Slide 4: วิดีโอเรียนรู้เพิ่มเติม (1) -->
+            <div class="testimonial-item">
+              <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
+                <video controls style="width: 100%; height: 100%; object-fit: cover;">
+                  <source src="assets/videos/พลังงานแสงอาทิตย์1.mp4" type="video/mp4">
+                  เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+                </video>
+              </div>
+            </div>
+            <!-- Slide 5: วิดีโอเรียนรู้เพิ่มเติม (2) -->
+            <div class="testimonial-item">
+              <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
+                <video controls style="width: 100%; height: 100%; object-fit: cover;">
+                  <source src="assets/videos/พลังงานแสงอาทิตย์2.mp4" type="video/mp4">
+                  เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+                </video>
+              </div>
+            </div>
+            <!-- Slide 6: วิดีโอเรียนรู้เพิ่มเติม (3) -->
+            <div class="testimonial-item">
+              <div class="ratio ratio-16x9 position-relative" style="border-radius: 10px; overflow: hidden;">
+                <video controls style="width: 100%; height: 100%; object-fit: cover;">
+                  <source src="assets/videos/พลังงานแสงอาทิตย์3.mp4" type="video/mp4">
+                  เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+                </video>
+              </div>
+            </div>
+          </div><!-- /.owl-carousel -->
+        </div>
+      </div>
+      
+    </div><!-- /.container -->
+  </div><!-- /.container-fluid -->
+</section>
+<!-- Solar Energy Content End -->
+
 
   <!-- Footer Start -->
   <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
       <div class="row g-5">
         <div class="col-lg-3 col-md-6">
-          <h4 class="text-white mb-4">มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น</h4>
-          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>150 ถ. ศรีจันทร์ ในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+          <h4 class="text-white mb-4">มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น </h4>
+          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> 150 ถ. ศรีจันทร์ ในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
           <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
           <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
           <div class="d-flex pt-2">
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+
+            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
+                class="fab fa-facebook-f"></i></a>
+
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <h4 class="text-white mb-4">เข้าถึงอย่างรวดเร็ว</h4>
-          <a class="btn btn-link" href="">หน้าหลัก</a>
-          <a class="btn btn-link" href="">พลังงานลม</a>
-          <a class="btn btn-link" href="">พลังงานแสงอาทิตย์</a>
-          <a class="btn btn-link" href="">พลังงานความร้อนใต้พิภพ</a>
-          <a class="btn btn-link" href="">พลังงานชีวมวล</a>
+          <a class="btn btn-link" href="index.html">หน้าหลัก</a>
+          <a class="btn btn-link" href="feature.html">พลังงานน้ำ</a>
+          <a class="btn btn-link" href="quote.html">พลังงานลม</a>
+          <a class="btn btn-link" href="testimonial.html">พลังงานความร้อนใต้พิภพ</a>
+          <a class="btn btn-link" href="404.html">พลังงานชีวมวล</a>
         </div>
       </div>
     </div>
@@ -333,13 +351,13 @@
 
     // Hotspot Data สำหรับแต่ละสไลด์ภาพ
     var solarTowerHotspots = [
-  { label: 'ตัวรับสัญญาณ (Receiver)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ตัวรับ (Receiver).mp3', top: '10%', left: '95%' },
+  { label: 'ตัวรับสัญญาณ (Receiver)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ตัวรับ (Receiver).mp3', top: '12%', left: '93%' },
   { label: 'หอคอย (Tower)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/หอคอย (Tower).mp3', top: '32%', left: '95%' },
-  { label: 'ถังเก็บความร้อน (Thermal Storage Tank)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ถังเก็บความร้อน (Thermal Storage Tank).mp3', top: '50%', left: '95%' },
+  { label: 'ถังเก็บความร้อน (Thermal Storage Tank)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ถังเก็บความร้อน (Thermal Storage Tank).mp3', top: '52%', left: '89%' },
   { label: 'ฮีเลียอสโต้ (Heliostat)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ฮีเลียสแตทส์ (Heliostat).mp3', top: '82%', left: '95%' },
   { label: 'โรงไฟฟ้า (Powerhouse)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/อาคารผลิตไฟฟ้า (Powerhouse).mp3', top: '22%', left: '7%' },
-  { label: 'กำลังไฟฟ้า (Power Output)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/กำลังไฟฟ้าที่ผลิต (Power Output) .mp3', top: '40%', left: '7%' },
-  { label: 'โรงไฟฟ้าพลังงานแสงอาทิตย์ (Solar Plant)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง.mp3', top: '1%', left: '50%' },
+  { label: 'กำลังไฟฟ้า (Power Output)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/กำลังไฟฟ้าที่ผลิต (Power Output) .mp3', top: '40%', left: '8%' },
+  { label: 'โรงไฟฟ้าพลังงานแสงอาทิตย์ (Solar Plant)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง.mp3', top: '8%', left: '50%' },
   { label: 'เครื่องควบแน่นไอน้ำ (Steam Condenser)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/เครื่องควบแน่นไอน้ำ (Steam Condenser).mp3', top: '70%', left: '80%' },
   { label: 'ของไหลนำความร้อน (Heat Transporting Medium)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ของไหลนำความร้อน (Heat Transporting Medium).mp3', top: '70%', left: '58%' }
 ];
@@ -347,14 +365,14 @@
 var photovoltaicHotspots = [
   { label: 'กำลังไฟฟ้า (Power Output)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/กำลังไฟฟ้าที่ผลิต (Power Output).mp3', top: '65%', left: '92%' },
   { label: 'เซลล์แสงอาทิตย์ (Photovoltaic Cell)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/เซลล์โฟโต้โวลตาอิค (Photovoltaic Cell).mp3', top: '10%', left: '81%' },
-  { label: 'แผงแสงอาทิตย์ (Photovoltaic Panel)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/แผงโซล่าเซลล์ (Photovoltaic Panel).mp3', top: '36%', left: '91%' },
+  { label: 'แผงแสงอาทิตย์ (Photovoltaic Panel)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/แผงโซล่าเซลล์ (Photovoltaic Panel).mp3', top: '38%', left: '90%' },
   { label: 'พื้นที่ว่าง (Free Space)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/พื้นที่ว่าง (Free Space).mp3', top: '20%', left: '80%' },
   { label: 'รั้ว (Fence)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/รั้ว (Fence).mp3', top: '80%', left: '10%' },
   { label: 'โรงไฟฟ้าพลังงานแสงอาทิตย์ (Photovoltaic Plant)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค.mp3', top: '5%', left: '50%' },
-  { label: 'สถานีไฟฟ้าย่อย (Substation)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/สถานีแปลงไฟฟ้า (Substation).mp3', top: '38%', left: '9%' },
+  { label: 'สถานีไฟฟ้าย่อย (Substation)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/สถานีแปลงไฟฟ้า (Substation).mp3', top: '39%', left: '8%' },
   { label: 'สายส่งใต้ดิน (Underground Power Lines)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/สายไฟฟ้าใต้ดิน (Underground Power Lines).mp3', top: '70%', left: '30%' },
   { label: 'สนามหญ้า (Grass)', audio: 'assets\\audio\\แสงอาทิตย์\\2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค\\หญ้า (Grass).mp3', top: '80%', left: '80%' },
-  { label: 'อินเวอร์เตอร์ (Inverter)', audio: 'assets\\audio\\แสงอาทิตย์\\2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค\\อินเวอร์เตอร์ (Inverters).mp3', top: '17%', left: '8%' }
+  { label: 'อินเวอร์เตอร์ (Inverter)', audio: 'assets\\audio\\แสงอาทิตย์\\2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค\\อินเวอร์เตอร์ (Inverters).mp3', top: '17%', left: '7%' }
 ];
 
 var farmHotspots = [
@@ -386,7 +404,7 @@ var farmHotspots = [
     label: 'เครื่องควบแน่นไอน้ำ (Steam Condenser)', 
     audio: 'assets\\audio\\แสงอาทิตย์\\3. ฟาร์มพลังงานแสงอาทิตย์\\เครื่องควบแน่นไอน้ำ (Steam Condenser).mp3', 
     top: '21%', 
-    left: '9%' 
+    left: '11%' 
   },
   { 
     label: 'แลกเปลี่ยนความร้อนด้วยเกลือ (Oil Salt Heat Exchanger)', 
@@ -409,14 +427,14 @@ var farmHotspots = [
   { 
     label: 'ถังเก็บเกลือร้อน (Hot Salt Tank)', 
     audio: 'assets\\audio\\แสงอาทิตย์\\3. ฟาร์มพลังงานแสงอาทิตย์\\ถังเกลือร้อน (Hot Salt Tank).mp3', 
-    top: '30%', 
+    top: '31%', 
     left: '92%' 
   },
   { 
     label: 'โรงไฟฟ้า (Powerhouse)', 
     audio: 'assets\\audio\\แสงอาทิตย์\\3. ฟาร์มพลังงานแสงอาทิตย์\\อาคารผลิตไฟฟ้า (Powerhouse).mp3', 
     top: '12%', 
-    left: '92%' 
+    left: '93%' 
   }
 ];
 

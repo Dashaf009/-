@@ -172,7 +172,8 @@ h6,
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 15%;
+    width: 60px;             /* ความกว้างของพื้นที่ปุ่ม */
+             /* ความสูงของพื้นที่ปุ่ม */
 }
 
 .carousel-control-prev-icon,
@@ -531,10 +532,10 @@ h6,
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(18, 10, 10, 0.2);
     font-family: "Jost", sans-serif;
-    white-space: normal;
     word-wrap: break-word;
     text-align: center;
-
+    white-space: nowrap;
+    overflow: hidden;
 }
     
   .audio-overlay-button:hover {
