@@ -449,19 +449,35 @@ h6,
 
 /*** Testimonial ***/
 
+/* 1) ปรับรูปภาพไม่ให้ถูกบังคับเป็น 100x100 */
 .testimonial-carousel .owl-item img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
+/* 2) ปรับความกว้าง Carousel ให้เล็กลง ~67% และจัดกึ่งกลางหน้า */
+.testimonial-carousel {
+    position: relative;
+    width: 67%;      /* หรือกำหนดเป็น px, max-width, หรือ % ตามต้องการ */
+    margin: 0 auto;  /* จัดให้อยู่กึ่งกลางหน้าจอ */
+}
+
+/* 3) ตั้งค่า nav (ปุ่ม Prev/Next) ให้อยู่กึ่งกลางแนวตั้ง และขยายเต็มกว้าง */
 .testimonial-carousel .owl-nav {
-    margin-top: 30px;
-    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    pointer-events: none; /* ถ้าไม่อยากให้ตรงกลางคลิกทะลุ ก็ลบออกได้ */
 }
 
+/* 4) ปรับรูปแบบปุ่ม Prev/Next */
 .testimonial-carousel .owl-nav .owl-prev,
 .testimonial-carousel .owl-nav .owl-next {
-    margin-right: 15px;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
     width: 45px;
     height: 45px;
     display: flex;
@@ -471,9 +487,22 @@ h6,
     background: var(--light);
     border-radius: 4px;
     font-size: 22px;
-    transition: .5s;
+    transition: 0.5s;
+    border: none;
+    pointer-events: auto;  /* ให้ปุ่มรับคลิกได้ */
 }
 
+/* ปุ่มเลื่อนซ้าย: อยู่ด้านนอกซ้ายของภาพ (ปรับ left:-30px ตามต้องการ) */
+.testimonial-carousel .owl-nav .owl-prev {
+    left: -45px;  
+}
+
+/* ปุ่มเลื่อนขวา: อยู่ด้านนอกขวาของภาพ (ปรับ right:-30px ตามต้องการ) */
+.testimonial-carousel .owl-nav .owl-next {
+    right: -45px; 
+}
+
+/* 5) เอฟเฟกต์ hover */
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
     background: var(--primary);

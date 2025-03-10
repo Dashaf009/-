@@ -98,19 +98,23 @@
     <div class="container">
       
       <!-- Section 1: 3D Model -->
-      <div class="row g-5 mb-5">
-        <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="text-center mb-4">
-            <h2>โมเดล 3D จำลองพลังงานน้ำ</h2>
-          </div>
-          <div class="ratio ratio-16x9" style="border-radius: 10px; overflow: hidden;">
-            <iframe src="https://3d.energyencyclopedia.com/marine?mode=iframe" 
-                    title="Water Energy Model" 
-                    style="border: none;" 
-                    allowfullscreen></iframe>
-          </div>
-        </div>
+<div class="row g-5 mb-5">
+  <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="text-center mb-4">
+      <h2>โมเดล 3D จำลองพลังงานน้ำ</h2>
+    </div>
+    <!-- Wrapper ควบคุมความกว้าง 67% -->
+    <div class="mx-auto" style="width: 67%;">
+      <div class="ratio ratio-16x9" style="border-radius: 10px; overflow: hidden;">
+        <iframe src="https://3d.energyencyclopedia.com/marine?mode=iframe" 
+                title="Water Energy Model" 
+                style="border: none;" 
+                allowfullscreen></iframe>
       </div>
+    </div>
+  </div>
+</div>
+
       
       <!-- Section 2: Image Carousel -->
       <div class="row g-5 mb-5">
@@ -344,36 +348,36 @@
 
     // Hotspot Data สำหรับโรงไฟฟ้ากระแสน้ำ
     var waterHotspots = [
-      { label: 'ขาตั้งยก (Lift Leg)', audio: 'assets/audio/น้ำ/1.โรงไฟฟ้ากระแสน้ำ/liftLeg.mp3', top: '29%', left: '7%' },
-      { label: 'คานขวาง (Cross Beam)', audio: 'assets/audio/น้ำ/1.โรงไฟฟ้ากระแสน้ำ/คานขวาง (Cross Beam).mp3', top: '54%', left: '9%' },
+      { label: 'ขาตั้งยก (Lift Leg)', audio: 'assets/audio/น้ำ/1.โรงไฟฟ้ากระแสน้ำ/liftLeg.mp3', top: '29%', left: '10%' },
+      { label: 'คานขวาง (Cross Beam)', audio: 'assets/audio/น้ำ/1.โรงไฟฟ้ากระแสน้ำ/คานขวาง (Cross Beam).mp3', top: '54%', left: '10%' },
       { label: 'เครน (Crane)', audio: 'assets/audio/น้ำ/1.โรงไฟฟ้ากระแสน้ำ/เครน (Crane).mp3', top: '12%', left: '95%' },
       { label: 'เสาเข็ม (Pile)', audio: 'assets/audio/น้ำ/1.โรงไฟฟ้ากระแสน้ำ/เสาเข็ม (Pile).mp3', top: '40%', left: '95%' },
       { label: 'ตำแหน่งติดตั้งเครื่องกังหัน', audio: 'assets/audio/น้ำ/1.โรงไฟฟ้ากระแสน้ำ/ตำแหน่งติดตั้งเครื่องกังหันกระแสน้ำ (Current Turbine Locations).mp3', top: '80%', left: '50%' },
-      { label: 'ใบพัดและเครื่องกำเนิดไฟฟ้า(1)', audio: 'assets/audio/น้ำ/1.โรงไฟฟ้ากระแสน้ำ/ใบพัดและเครื่องกำเนิดไฟฟ้า (Rotor and Generator)1.mp3', top: '63%', left: '90%' },
-      { label: 'ใบพัดและเครื่องกำเนิดไฟฟ้า(2)', audio: 'assets/audio/น้ำ/1.โรงไฟฟ้ากระแสน้ำ/ใบพัดและเครื่องกำเนิดไฟฟ้า (Rotor and Generator)2.mp3', top: '71%', left: '90%' },
+      { label: 'ใบพัดและเครื่องกำเนิดไฟฟ้า(1)', audio: 'assets/audio/น้ำ/1.โรงไฟฟ้ากระแสน้ำ/ใบพัดและเครื่องกำเนิดไฟฟ้า (Rotor and Generator)1.mp3', top: '63%', left: '87%' },
+      { label: 'ใบพัดและเครื่องกำเนิดไฟฟ้า(2)', audio: 'assets/audio/น้ำ/1.โรงไฟฟ้ากระแสน้ำ/ใบพัดและเครื่องกำเนิดไฟฟ้า (Rotor and Generator)2.mp3', top: '71%', left: '87%' },
       { label: 'โรงไฟฟ้ากระแสน้ำ', audio: 'assets/audio/น้ำ/1.โรงไฟฟ้ากระแสน้ำ/โรงไฟฟ้ากระแสน้ำ.mp3', top: '5%', left: '50%' }
     ];
 
     var tidalHotspots = [
       { label: 'กังหันแรงกระสน้ำ (Tidal Turbine)', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/กังหันแรงกระแสน้ำ (Tidal Turbine).mp3', top: '67%', left: '70%' },
-      { label: 'เขื่อน (Barrage)', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/เขื่อน (Barrage).mp3', top: '15%', left: '95%' },
-      { label: 'ประตูน้ำ (Sluice Gate)', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/ประตูน้ำ (Sluice Gate).mp3', top: '42%', left: '8%' },
-      { label: 'ฝั่งของอ่างเก็บน้ำ (Basin Side)', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/ฝั่งของอ่างเก็บน้ำ (Basin Side).mp3', top: '26%', left: '10%' },
-      { label: 'ฝั่งมหาสมุทร (Ocean Side)', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/ฝั่งมหาสมุทร (Ocean Side).mp3', top: '40%', left: '94%' },
+      { label: 'เขื่อน (Barrage)', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/เขื่อน (Barrage).mp3', top: '15%', left: '92%' },
+      { label: 'ประตูน้ำ (Sluice Gate)', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/ประตูน้ำ (Sluice Gate).mp3', top: '42%', left: '10%' },
+      { label: 'ฝั่งของอ่างเก็บน้ำ (Basin Side)', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/ฝั่งของอ่างเก็บน้ำ (Basin Side).mp3', top: '26%', left: '12%' },
+      { label: 'ฝั่งมหาสมุทร (Ocean Side)', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/ฝั่งมหาสมุทร (Ocean Side).mp3', top: '40%', left: '90%' },
       { label: 'โรงไฟฟ้าพลังงานจากแรงกระสน้ำ', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ.mp3', top: '10%', left: '50%' },
       { label: 'วิธีดำเนินการของโรงไฟฟ้า', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/วิธีการดำเนินงานของโรงไฟฟ้า (Power Plant Operation Methods).mp3', top: '90%', left: '50%' },
-      { label: 'เครื่องกำเนิดไฟฟ้า (Turbine-Generator Unit)', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/หน่วยกังหัน–เครื่องกำเนิดไฟฟ้า (Turbine-Generator Unit).mp3', top: '73%', left: '15%' }
+      { label: 'เครื่องกำเนิดไฟฟ้า (Turbine-Generator Unit)', audio: 'assets/audio/น้ำ/2.โรงไฟฟ้าพลังงานจากแรงกระแสน้ำ/หน่วยกังหัน–เครื่องกำเนิดไฟฟ้า (Turbine-Generator Unit).mp3', top: '73%', left: '18%' }
     ];
 
     var waveHotspots = [
-      { label: 'คอลัมน์น้ำสั่น (Oscillating Water Column)', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/คอลัมน์น้ําสั่น (Oscillating Water Column).mp3', top: '65%', left: '14%' },
-      { label: 'เครื่องกังหัน Wells(Wells Turbine)', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/เครื่องกังหัน Wells (Wells Turbine).mp3', top: '42%', left: '93.30  %' },
+      { label: 'คอลัมน์น้ำสั่น (Oscillating Water Column)', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/คอลัมน์น้ําสั่น (Oscillating Water Column).mp3', top: '65%', left: '20%' },
+      { label: 'เครื่องกังหัน Wells(Wells Turbine)', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/เครื่องกังหัน Wells (Wells Turbine).mp3', top: '42%', left: '88%' },
       { label: 'ตำแหน่งตั้งโรงไฟฟ้า (Power Plant Location)', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/ตำแหน่งตั้งโรงไฟฟ้า (Power Plant Location).mp3', top: '90%', left: '50%' },
       { label: 'โรงไฟฟ้าพลังงานจากคลื่น', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/โรงไฟฟ้าพลังงานจากคลื่น.mp3', top: '10%', left: '50%' },
-      { label: 'วาล์วอากาศ (Air Valve)', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/วาล์วอากาศ (Air Valve).mp3', top: '60%', left: '95%' },
+      { label: 'วาล์วอากาศ (Air Valve)', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/วาล์วอากาศ (Air Valve).mp3', top: '58%', left: '88%' },
       { label: 'ห้องอากาศ (Pneumatic Chamber)', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/ห้องอากาศ (Pneumatic Chamber).mp3', top: '55%', left: '45%' },
-      { label: 'อาคารคอนกรีตเสริมเหล็ก(Reinforced-Concrete Building)', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/อาคารคอนกรีตเสริมเหล็ก (Reinforced-Concrete Building).mp3', top: '26%', left: '16%' },
-      { label: 'เครื่องกำเนิดไฟฟ้า (Generator)', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/เครื่องกำเนิดไฟฟ้า.mp3', top: '26%', left: '94%' }
+      { label: 'อาคารคอนกรีตเสริมเหล็ก(Reinforced-Concrete Building)', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/อาคารคอนกรีตเสริมเหล็ก (Reinforced-Concrete Building).mp3', top: '26%', left: '23%' },
+      { label: 'เครื่องกำเนิดไฟฟ้า (Generator)', audio: 'assets/audio/น้ำ/3.โรงไฟฟ้าพลังงานจากคลื่น/เครื่องกำเนิดไฟฟ้า.mp3', top: '28%', left: '88%' }
     ];
 
      // เมื่อ DOM โหลดเสร็จ ให้สร้างปุ่ม hotspot สำหรับแต่ละ container และเริ่มต้น Owl Carousel

@@ -97,21 +97,25 @@
   <div class="container-fluid py-5">
     <div class="container">
       
-      <!-- Section 1: 3D Model -->
-      <div class="row g-5 mb-5">
-        <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="text-center mb-4">
-            <h2>โมเดล 3D จำลองพลังงานแสงอาทิตย์</h2>
-          </div>
-          <div class="ratio ratio-16x9" style="border-radius: 10px; overflow: hidden;">
-            <iframe src="https://3d.energyencyclopedia.com/solar?mode=iframe" 
-                    title="Solar Energy Model" 
-                    style="border: none;" 
-                    allowfullscreen>
-            </iframe>
-          </div>
-        </div>
+<!-- Section 1: 3D Model -->
+<div class="row g-5 mb-5">
+  <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="text-center mb-4">
+      <h2>โมเดล 3D จำลองพลังงานแสงอาทิตย์</h2>
+    </div>
+    <!-- Wrapper ควบคุมความกว้าง 67% -->
+    <div class="mx-auto" style="width: 67%;">
+      <div class="ratio ratio-16x9" style="border-radius: 10px; overflow: hidden;">
+        <iframe src="https://3d.energyencyclopedia.com/solar?mode=iframe" 
+                title="Solar Energy Model" 
+                style="border: none;" 
+                allowfullscreen>
+        </iframe>
       </div>
+    </div>
+  </div>
+</div>
+
       
       <!-- Section 2: Image Carousel -->
       <div class="row g-5 mb-5">
@@ -347,28 +351,28 @@
 
     // Hotspot Data สำหรับแต่ละสไลด์ภาพ
     var solarTowerHotspots = [
-  { label: 'ตัวรับสัญญาณ (Receiver)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ตัวรับ (Receiver).mp3', top: '12%', left: '93%' },
-  { label: 'หอคอย (Tower)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/หอคอย (Tower).mp3', top: '32%', left: '95%' },
-  { label: 'ถังเก็บความร้อน (Thermal Storage Tank)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ถังเก็บความร้อน (Thermal Storage Tank).mp3', top: '52%', left: '89%' },
-  { label: 'ฮีเลียอสโต้ (Heliostat)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ฮีเลียสแตทส์ (Heliostat).mp3', top: '82%', left: '95%' },
-  { label: 'โรงไฟฟ้า (Powerhouse)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/อาคารผลิตไฟฟ้า (Powerhouse).mp3', top: '22%', left: '7%' },
-  { label: 'กำลังไฟฟ้า (Power Output)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/กำลังไฟฟ้าที่ผลิต (Power Output) .mp3', top: '40%', left: '8%' },
+  { label: 'ตัวรับสัญญาณ (Receiver)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ตัวรับ (Receiver).mp3', top: '12%', left: '90%' },
+  { label: 'หอคอย (Tower)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/หอคอย (Tower).mp3', top: '32%', left: '93%' },
+  { label: 'ถังเก็บความร้อน (Thermal Storage Tank)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ถังเก็บความร้อน (Thermal Storage Tank).mp3', top: '52%', left: '84%' },
+  { label: 'ฮีเลียอสโต้ (Heliostat)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ฮีเลียสแตทส์ (Heliostat).mp3', top: '82%', left: '91%' },
+  { label: 'โรงไฟฟ้า (Powerhouse)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/อาคารผลิตไฟฟ้า (Powerhouse).mp3', top: '22%', left: '10%' },
+  { label: 'กำลังไฟฟ้า (Power Output)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/กำลังไฟฟ้าที่ผลิต (Power Output) .mp3', top: '40%', left: '11%' },
   { label: 'โรงไฟฟ้าพลังงานแสงอาทิตย์ (Solar Plant)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง.mp3', top: '8%', left: '50%' },
   { label: 'เครื่องควบแน่นไอน้ำ (Steam Condenser)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/เครื่องควบแน่นไอน้ำ (Steam Condenser).mp3', top: '70%', left: '80%' },
-  { label: 'ของไหลนำความร้อน (Heat Transporting Medium)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ของไหลนำความร้อน (Heat Transporting Medium).mp3', top: '70%', left: '58%' }
+  { label: 'ของไหลนำความร้อน (Heat Transporting Medium)', audio: 'assets/audio/แสงอาทิตย์/1.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบหอคอยกลาง/ของไหลนำความร้อน (Heat Transporting Medium).mp3', top: '70%', left: '22%' }
 ];
 
 var photovoltaicHotspots = [
-  { label: 'กำลังไฟฟ้า (Power Output)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/กำลังไฟฟ้าที่ผลิต (Power Output).mp3', top: '65%', left: '92%' },
-  { label: 'เซลล์แสงอาทิตย์ (Photovoltaic Cell)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/เซลล์โฟโต้โวลตาอิค (Photovoltaic Cell).mp3', top: '10%', left: '81%' },
-  { label: 'แผงแสงอาทิตย์ (Photovoltaic Panel)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/แผงโซล่าเซลล์ (Photovoltaic Panel).mp3', top: '38%', left: '90%' },
-  { label: 'พื้นที่ว่าง (Free Space)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/พื้นที่ว่าง (Free Space).mp3', top: '20%', left: '80%' },
+  { label: 'กำลังไฟฟ้า (Power Output)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/กำลังไฟฟ้าที่ผลิต (Power Output).mp3', top: '65%', left: '90%' },
+  { label: 'เซลล์แสงอาทิตย์ (Photovoltaic Cell)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/เซลล์โฟโต้โวลตาอิค (Photovoltaic Cell).mp3', top: '15%', left: '81%' },
+  { label: 'แผงแสงอาทิตย์ (Photovoltaic Panel)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/แผงโซล่าเซลล์ (Photovoltaic Panel).mp3', top: '38%', left: '85%' },
+  { label: 'พื้นที่ว่าง (Free Space)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/พื้นที่ว่าง (Free Space).mp3', top: '26.5%', left: '80%' },
   { label: 'รั้ว (Fence)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/รั้ว (Fence).mp3', top: '80%', left: '10%' },
   { label: 'โรงไฟฟ้าพลังงานแสงอาทิตย์ (Photovoltaic Plant)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค.mp3', top: '5%', left: '50%' },
-  { label: 'สถานีไฟฟ้าย่อย (Substation)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/สถานีแปลงไฟฟ้า (Substation).mp3', top: '39%', left: '8%' },
+  { label: 'สถานีไฟฟ้าย่อย (Substation)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/สถานีแปลงไฟฟ้า (Substation).mp3', top: '39%', left: '12%' },
   { label: 'สายส่งใต้ดิน (Underground Power Lines)', audio: 'assets/audio/แสงอาทิตย์/2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค/สายไฟฟ้าใต้ดิน (Underground Power Lines).mp3', top: '70%', left: '30%' },
   { label: 'สนามหญ้า (Grass)', audio: 'assets\\audio\\แสงอาทิตย์\\2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค\\หญ้า (Grass).mp3', top: '80%', left: '80%' },
-  { label: 'อินเวอร์เตอร์ (Inverter)', audio: 'assets\\audio\\แสงอาทิตย์\\2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค\\อินเวอร์เตอร์ (Inverters).mp3', top: '17%', left: '7%' }
+  { label: 'อินเวอร์เตอร์ (Inverter)', audio: 'assets\\audio\\แสงอาทิตย์\\2.โรงไฟฟ้าพลังงานแสงอาทิตย์แบบโฟโต้โวลตาอิค\\อินเวอร์เตอร์ (Inverters).mp3', top: '17%', left: '10%' }
 ];
 
 var farmHotspots = [
@@ -376,7 +380,7 @@ var farmHotspots = [
     label: 'กระจกทรงคาน (Parabolic Mirror)', 
     audio: 'assets\\audio\\แสงอาทิตย์\\3. ฟาร์มพลังงานแสงอาทิตย์\\กระจกพาราโบลิก (Parabolic Mirror).mp3', 
     top: '40%', 
-    left: '9%' 
+    left: '13%' 
   },
   { 
     label: 'กำลังไฟฟ้า (Power Output)', 
@@ -400,7 +404,7 @@ var farmHotspots = [
     label: 'เครื่องควบแน่นไอน้ำ (Steam Condenser)', 
     audio: 'assets\\audio\\แสงอาทิตย์\\3. ฟาร์มพลังงานแสงอาทิตย์\\เครื่องควบแน่นไอน้ำ (Steam Condenser).mp3', 
     top: '21%', 
-    left: '11%' 
+    left: '15%' 
   },
   { 
     label: 'แลกเปลี่ยนความร้อนด้วยเกลือ (Oil Salt Heat Exchanger)', 
@@ -412,25 +416,25 @@ var farmHotspots = [
     label: 'ตัวดูดความร้อน (Heat Absorber)', 
     audio: 'assets\\audio\\แสงอาทิตย์\\3. ฟาร์มพลังงานแสงอาทิตย์\\ตัวดูดซับความร้อน (Heat Absorber).mp3', 
     top: '75%', 
-    left: '9%' 
+    left: '14%' 
   },
   { 
     label: 'ถังเก็บเกลือเย็น (Cold Salt Tank)', 
     audio: 'assets\\audio\\แสงอาทิตย์\\3. ฟาร์มพลังงานแสงอาทิตย์\\ถังเกลือเย็น (Cold Salt Tank).mp3', 
     top: '50%', 
-    left: '92%' 
+    left: '88%' 
   },
   { 
     label: 'ถังเก็บเกลือร้อน (Hot Salt Tank)', 
     audio: 'assets\\audio\\แสงอาทิตย์\\3. ฟาร์มพลังงานแสงอาทิตย์\\ถังเกลือร้อน (Hot Salt Tank).mp3', 
     top: '31%', 
-    left: '92%' 
+    left: '88%' 
   },
   { 
     label: 'โรงไฟฟ้า (Powerhouse)', 
     audio: 'assets\\audio\\แสงอาทิตย์\\3. ฟาร์มพลังงานแสงอาทิตย์\\อาคารผลิตไฟฟ้า (Powerhouse).mp3', 
     top: '12%', 
-    left: '93%' 
+    left: '90%' 
   }
 ];
 
